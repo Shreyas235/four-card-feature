@@ -21,7 +21,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--Very-Light-Gray);
-    padding: 1rem;
 }
 
 p, span {
@@ -29,7 +28,7 @@ p, span {
 }
 
 .description {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin-bottom: 2.5rem;
 }
 
@@ -37,14 +36,14 @@ p, span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45rem;
+    width: 60rem;
     justify-content: center;
     text-align: center;
     margin-bottom: 2.5rem;
 }
 
 .heading h1, span {
-    font-size: 2.8rem;
+    font-size: 4rem;
 }
 
 .heading h1 {
@@ -68,11 +67,12 @@ p, span {
     width: fit-content;
     position: relative;
     translate: -37.5rem;
+    font-size: 1.4rem;
 }
 
 .container div {
-    max-height: 15rem;
-    max-width: 25rem;
+    max-height: 20rem;
+    width: 30rem;
     padding: 2rem;
     background-color: white;
     box-shadow: 0px 0px 2rem hsl(0, 3%, 77%);
@@ -81,8 +81,8 @@ p, span {
 
 .supervisor {
     position: absolute;
-    margin-top: calc(50rem / 4.5);
-    margin-left: -3.3rem;
+    margin-top: calc(50rem / 3.5);
+    margin-left: -12.5rem;
     border-top: 2px solid hsl(180, 62%, 55%);
 }
 
@@ -95,20 +95,20 @@ p, span {
 .karma {
     position: absolute;
     margin-left: calc(75rem / 3);
-    margin-top: calc(50rem / 2.3);
+    margin-top: calc(50rem / 1.85);
     border-top: 2px solid hsl(34, 97%, 64%);
 }
 
 .calculator {
     position: absolute;
-    margin-top: calc(50rem / 4.5);
-    margin-left: calc(75rem / 1.41);
+    margin-top: calc(50rem / 3.5);
+    margin-left: calc(75rem / 1.2);
     border-top: 2px solid hsl(212, 86%, 64%);
 }
 
 .div-images {
     width: 5rem;
-    margin-left: calc(25rem / 1.5);
+    margin-left: calc(25rem / 1);
     margin-top: calc(15rem / 10);
 }
 
