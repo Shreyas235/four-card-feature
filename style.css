@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-Light-Gray);
+    padding: 1rem;
+}
+
+p, span {
+    color: var(--Grayish-Blue);
+}
+
+.description {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.heading h1, span {
+    font-size: 2.8rem;
+}
+
+.heading h1 {
+    color: var(--Very-Dark-Blue);
+    margin-top: 1.5rem;
+}
+
+.heading span {
+    font-weight: 200;
+    margin-bottom: -2rem;
+    color: var(--Grayish-Blue);
+}
+
+.heading p {
+    margin-top: -0.7rem;
+    color: var(--Grayish-Blue);
+}
+
+.container {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    translate: -37.5rem;
+}
+
+.container div {
+    max-height: 15rem;
+    max-width: 25rem;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0px 0px 2rem hsl(0, 3%, 77%);
+    border-radius: 0.5rem;
+}
+
+.supervisor {
+    position: absolute;
+    margin-top: calc(50rem / 4.5);
+    margin-left: -3.3rem;
+    border-top: 2px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    position: absolute;
+    margin-left: calc(75rem / 3);
+    border-top: 2px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    position: absolute;
+    margin-left: calc(75rem / 3);
+    margin-top: calc(50rem / 2.3);
+    border-top: 2px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    position: absolute;
+    margin-top: calc(50rem / 4.5);
+    margin-left: calc(75rem / 1.41);
+    border-top: 2px solid hsl(212, 86%, 64%);
+}
+
+.div-images {
+    width: 5rem;
+    margin-left: calc(25rem / 1.5);
+    margin-top: calc(15rem / 10);
+}
+
