@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 :root {
-    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Very-Dark-Blue: #4c4e61;
     --Grayish-Blue: hsl(229, 6%, 66%);
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --Red: hsl(0, 78%, 62%);
@@ -10,105 +10,97 @@
     --Blue: hsl(212, 86%, 64%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--Very-Light-Gray);
-}
-
-p, span {
-    color: var(--Grayish-Blue);
-}
-
-.description {
-    font-size: 1.7rem;
-    margin-bottom: 2.5rem;
+    background: var(--Very-Light-Gray);
 }
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60rem;
-    justify-content: center;
     text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.heading h1, span {
-    font-size: 4rem;
-}
-
-.heading h1 {
-    color: var(--Very-Dark-Blue);
-    margin-top: 1.5rem;
 }
 
 .heading span {
-    font-weight: 200;
-    margin-bottom: -2rem;
-    color: var(--Grayish-Blue);
+    font-size: 30px;
+    color: var(--Very-Dark-Blue);
+    font-weight: 300;
 }
 
-.heading p {
-    margin-top: -0.7rem;
+.heading h1 {
+    font-size: 30px;
+    color: var(--Very-Dark-Blue);
+}
+
+.container p, .heading p {
+    font-size: 15px;
     color: var(--Grayish-Blue);
 }
 
 .container {
-    height: fit-content;
-    width: fit-content;
+    width: 70%;
     position: relative;
-    translate: -42rem;
-    font-size: 1.4rem;
+    margin-top: 50px;
 }
 
-.container div {
-    max-height: 20rem;
-    width: 30rem;
-    padding: 2rem;
-    background-color: white;
-    box-shadow: 0px 0px 2rem hsl(0, 3%, 77%);
-    border-radius: 0.5rem;
+.container h2 {
+    font-size: 22px;
+    color: var(--Very-Dark-Blue);
 }
 
-.supervisor {
+.container img {
+    width: 50px;
     position: absolute;
-    margin-top: calc(50rem / 3.5);
-    margin-left: -12.5rem;
-    border-top: 2px solid hsl(180, 62%, 55%);
+    bottom: 15px;
+    right: 15px;
+}
+
+div {
+    border-top: 3px solid;
+    box-shadow: 0px 0px 10px #4c4e61;
+    width: calc(70% / 2.3);
+    height: 200px;
+    position: relative;
+    padding: 2rem;
+    border-radius: 5px;
 }
 
 .team-builder {
     position: absolute;
-    margin-left: calc(75rem / 3);
-    border-top: 2px solid hsl(0, 78%, 62%);
+    left: 50%;
+    transform: translate(-50%);
+    border-color: var(--Red);
 }
 
-.karma {
+.supervisor {
     position: absolute;
-    margin-left: calc(75rem / 3);
-    margin-top: calc(50rem / 1.85);
-    border-top: 2px solid hsl(34, 97%, 64%);
+    top: calc(200px / 1.5);
+    border-color: var(--Cyan);
 }
 
 .calculator {
     position: absolute;
-    margin-top: calc(50rem / 3.5);
-    margin-left: calc(75rem / 1.2);
-    border-top: 2px solid hsl(212, 86%, 64%);
+    right: 0;
+    top: calc(200px / 1.5);
+    border-color: var(--Blue);
 }
 
-.div-images {
-    width: 5rem;
-    margin-left: calc(25rem / 1);
-    margin-top: calc(15rem / 10);
+.karma {
+    position: absolute;
+    top: calc(400px / 1.5);
+    left: 50%;
+    transform: translate(-50%);
+    border-color: var(--Orange);
 }
 
